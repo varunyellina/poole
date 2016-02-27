@@ -8,6 +8,7 @@ url:                 http://yellina.io
 paginate:            5
 baseurl:             ""
 excerpt_separator:   <!-- excerpt -->
+highlighter:         rouge
 
 # Assets
 #
