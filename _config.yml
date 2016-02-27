@@ -3,10 +3,11 @@ permalink:           /:title/
 
 # Setup
 title:               "Varun Yellina"
-tagline:             "@vyellina"
+tagline:             "Technology, Design and Cycling"
 url:                 http://yellina.io
-paginate:            1
+paginate:            5
 baseurl:             ""
+excerpt_separator:   <!-- excerpt -->
 
 # Assets
 #
@@ -20,6 +21,7 @@ author:
   name:              Varun Yellina
   url:               https://twitter.com/vyellina
   email:             varun@yellina.io
+  twitter:           "@vyellina"
 
 # Custom vars
 version:             2.0.0
