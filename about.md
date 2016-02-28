@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+resource: true
 ---
 
 <p class="message">

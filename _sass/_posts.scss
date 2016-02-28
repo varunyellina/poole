@@ -5,11 +5,15 @@
 
 .page,
 .post {
-  margin-bottom: 4em;
+  margin-bottom: 2rem;
 
   li + li {
     margin-top: .25rem;
   }
+}
+
+.post {
+  border-bottom: 1px solid $border-color;
 }
 
 // Blog post or page title

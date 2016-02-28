@@ -22,5 +22,16 @@
     font-size: 75%;
     font-weight: 400;
     opacity: .5;
+
+    ul {
+      list-style: none;
+      display: inline-block;
+      float: right;
+
+      li {
+        display: inline-block;
+        padding-left: 1rem;
+      }
+    }
   }
 }

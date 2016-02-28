@@ -10,6 +10,15 @@
         <h3 class="masthead-title">
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
           <small><a href="{{ site.author.url }}">{{ site.author.twitter }}</a></small>
+          <small>
+            <ul class="nav-list">
+              {% for page in site.pages %}
+                {% if page.resource == true %}
+                <li><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </small>
         </h3>
       </header>
 
@@ -19,7 +28,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved. This site is powered by the awesome sauce from <a href="https://jekyllrb.com/" title="Jekyll - Transform your plain text into static websites and blogs">Jekyll</a>.
         </small>
       </footer>
     </div>

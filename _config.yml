@@ -1,6 +1,19 @@
 # Permalinks
 permalink:           /:title/
 
+# Collections
+collections:
+  projects:
+    output:          true
+
+# Collection defaults
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+
+
 # Setup
 title:               "Varun Yellina"
 tagline:             "Technology, Design and Cycling"
@@ -9,6 +22,10 @@ paginate:            5
 baseurl:             ""
 excerpt_separator:   <!-- excerpt -->
 highlighter:         rouge
+
+exclude:
+  - README.md
+  - LICENSE.md
 
 # Assets
 #
