@@ -5,6 +5,8 @@ client:         Grandh
 client-url:     http://grandh.org
 date:           "December 2011"
 poster-image:   "http://placehold.it/800x400"
+categories:
+  - Grandh
 listing-priority: 1
 ---
 
