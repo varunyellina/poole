@@ -36,9 +36,11 @@ resource: true
     {% for project in site.projects %} <!-- Projects loop -->
       {% if project.categories contains category %}
         <article class="post">
-          <img src="{{ project.poster-image }}">
           <h1 class="post-title">
-            <a href="{{ site.baseurl }}{{ project.url }}" title="">{{ project.title }}</a>
+            <a href="{{ site.baseurl }}{{ project.url }}" title="">
+              <img src="{{ project.poster-image }}">
+              {{ project.title }}
+            </a>
           </h1>
           {{ project.excerpt }}
         </article>
