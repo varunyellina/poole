@@ -4,11 +4,6 @@ title: Projects
 resource: true
 ---
 
-<article class="message introduction">
-  <h1 class="post-title">Hi, I'm Varun.</h1>
-  I'm a designer at CREO (previously Teewe). I work on designing experiences across the ecosystem of mobile & desktop apps for Teewe, most recently on making android better at CREO.
-</article>
-
 <!-- Collating all categories of projects into one "categories" object -->
 {% assign rawcategories = "" %}
 {% for project in site.projects %}
@@ -32,8 +27,6 @@ resource: true
 
 <div class="posts">
   {% for category in categories %} <!-- Categories loop -->
-    <h3>{{ category }}</h3>
-
     {% for project in site.projects %} <!-- Projects loop -->
       {% if project.categories contains category %}
         <article class="post">
