@@ -3,14 +3,16 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="posts-listing">
   {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h1>
-    {{ post.excerpt }}
-  </article>
+  <a href="{{ site.baseurl }}{{ post.url }}">
+    <article class="post">
+      <h1 class="post-title">
+        {{ post.title }}
+      </h1>
+      {{ post.excerpt }}
+    </article>
+  </a>
   {% endfor %}
 </div>
 {% if paginator.total_pages > 1 %}

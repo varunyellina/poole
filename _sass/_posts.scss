@@ -5,15 +5,36 @@
 
 .page,
 .post {
-  margin-bottom: 2rem;
+  // padding-bottom: 1rem;
+  // padding-top: 2rem;
+  padding: 1rem 1.5rem 0;
 
   li + li {
     margin-top: .25rem;
   }
 }
 
-.post {
-  border-bottom: 1px solid $border-color;
+.posts-listing {
+  .post {
+    border-bottom: 1px solid $border-color;
+    width: auto;
+
+    &:hover,
+    &:focus {
+      background-color: $gray-1;
+      border-bottom: 1px solid $link-color;
+    }
+  }
+
+  a {
+    color: $body-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
 }
 
 // Blog post or page title
@@ -40,6 +61,7 @@
 // Related posts
 .related {
   border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
   padding-top: 2rem;
@@ -57,15 +79,6 @@
     small {
       color: $gray-6;
       font-size: 75%;
-    }
-
-    a:hover {
-      color: $link-color;
-      text-decoration: none;
-
-      small {
-        color: inherit;
-      }
     }
   }
 }
