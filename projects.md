@@ -20,7 +20,7 @@ resource: true
             {% assign categories = category | split:'|' %}
         {% endif %}
         {% unless categories contains category %}
-            {% assign categories = categories | join:'|' | append:'|' | append:cat | split:'|' %}
+            {% assign categories = categories | join:'|' | append:'|' | append:category | split:'|' %}
         {% endunless %}
     {% endif %}
 {% endfor %}
